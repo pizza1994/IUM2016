@@ -7,22 +7,35 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IndicationsController" customModule="IUM" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="iN0-l3-epB" id="lxr-wf-qRS"/>
+                <outlet property="view" destination="vnr-ug-rqr" id="43r-aP-4ul"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="vnr-ug-rqr">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Cerca opera o area" translatesAutoresizingMaskIntoConstraints="NO" id="Rfu-DN-WLV">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fQS-5x-eA3">
+                    <rect key="frame" x="0.0" y="149" width="375" height="44"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="indicazioni_selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="4MS-dE-4Eq">
+                    <rect key="frame" x="87" y="-1" width="180" height="60"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="htt-ZN-BGw">
+                    <rect key="frame" x="0.0" y="80" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mappa.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kqk-Mg-1Q6">
+                    <rect key="frame" x="8" y="8" width="60" height="60"/>
+                </imageView>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="413" y="375"/>
         </view>
     </objects>
+    <resources>
+        <image name="indicazioni_selected.png" width="426" height="114"/>
+        <image name="mappa.png" width="277" height="114"/>
+    </resources>
 </document>

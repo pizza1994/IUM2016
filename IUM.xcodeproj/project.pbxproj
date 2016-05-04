@@ -17,9 +17,16 @@
 		25B1049D1CC77C25005C6B2C /* IndicationsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1049C1CC77C25005C6B2C /* IndicationsController.swift */; };
 		25B1049F1CC77C2F005C6B2C /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1049E1CC77C2F005C6B2C /* HelpController.swift */; };
 		25B104A11CC78463005C6B2C /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B104A01CC78463005C6B2C /* ContainerViewController.swift */; };
-		25B104A31CC78842005C6B2C /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104A21CC78842005C6B2C /* MapController.xib */; };
 		25B104A51CC78865005C6B2C /* HelpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104A41CC78865005C6B2C /* HelpController.xib */; };
 		25B104A71CC78870005C6B2C /* IndicationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104A61CC78870005C6B2C /* IndicationsController.xib */; };
+		25B104D21CD9FA69005C6B2C /* indicazioni_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104CC1CD9FA69005C6B2C /* indicazioni_selected.png */; };
+		25B104D31CD9FA69005C6B2C /* indicazioni.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104CD1CD9FA69005C6B2C /* indicazioni.png */; };
+		25B104D41CD9FA69005C6B2C /* informazioni_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104CE1CD9FA69005C6B2C /* informazioni_selected.png */; };
+		25B104D51CD9FA69005C6B2C /* informazioni.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104CF1CD9FA69005C6B2C /* informazioni.png */; };
+		25B104D61CD9FA69005C6B2C /* mappa_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104D01CD9FA69005C6B2C /* mappa_selected.png */; };
+		25B104D71CD9FA69005C6B2C /* mappa.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104D11CD9FA69005C6B2C /* mappa.png */; };
+		25B104D91CD9FA93005C6B2C /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104D81CD9FA93005C6B2C /* MapController.xib */; };
+		25B104DB1CDA0A2C005C6B2C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104DA1CDA0A2C005C6B2C /* map.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +63,16 @@
 		25B1049C1CC77C25005C6B2C /* IndicationsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicationsController.swift; sourceTree = "<group>"; };
 		25B1049E1CC77C2F005C6B2C /* HelpController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		25B104A01CC78463005C6B2C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		25B104A21CC78842005C6B2C /* MapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
 		25B104A41CC78865005C6B2C /* HelpController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpController.xib; sourceTree = "<group>"; };
 		25B104A61CC78870005C6B2C /* IndicationsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndicationsController.xib; sourceTree = "<group>"; };
+		25B104CC1CD9FA69005C6B2C /* indicazioni_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = indicazioni_selected.png; sourceTree = "<group>"; };
+		25B104CD1CD9FA69005C6B2C /* indicazioni.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = indicazioni.png; sourceTree = "<group>"; };
+		25B104CE1CD9FA69005C6B2C /* informazioni_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = informazioni_selected.png; sourceTree = "<group>"; };
+		25B104CF1CD9FA69005C6B2C /* informazioni.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = informazioni.png; sourceTree = "<group>"; };
+		25B104D01CD9FA69005C6B2C /* mappa_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappa_selected.png; sourceTree = "<group>"; };
+		25B104D11CD9FA69005C6B2C /* mappa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappa.png; sourceTree = "<group>"; };
+		25B104D81CD9FA93005C6B2C /* MapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
+		25B104DA1CDA0A2C005C6B2C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,7 @@
 		25B1046B1CC7793D005C6B2C /* IUM */ = {
 			isa = PBXGroup;
 			children = (
+				25B104CB1CD9F52D005C6B2C /* Immagini */,
 				25B1046C1CC7793D005C6B2C /* AppDelegate.swift */,
 				25B1046E1CC7793D005C6B2C /* MapController.swift */,
 				25B1049C1CC77C25005C6B2C /* IndicationsController.swift */,
@@ -118,9 +133,10 @@
 				25B104751CC7793D005C6B2C /* LaunchScreen.storyboard */,
 				25B104781CC7793D005C6B2C /* Info.plist */,
 				25B104A01CC78463005C6B2C /* ContainerViewController.swift */,
-				25B104A21CC78842005C6B2C /* MapController.xib */,
+				25B104D81CD9FA93005C6B2C /* MapController.xib */,
 				25B104A41CC78865005C6B2C /* HelpController.xib */,
 				25B104A61CC78870005C6B2C /* IndicationsController.xib */,
+				25B104DA1CDA0A2C005C6B2C /* map.png */,
 			);
 			path = IUM;
 			sourceTree = "<group>";
@@ -141,6 +157,19 @@
 				25B1048E1CC7793D005C6B2C /* Info.plist */,
 			);
 			path = IUMUITests;
+			sourceTree = "<group>";
+		};
+		25B104CB1CD9F52D005C6B2C /* Immagini */ = {
+			isa = PBXGroup;
+			children = (
+				25B104CC1CD9FA69005C6B2C /* indicazioni_selected.png */,
+				25B104CD1CD9FA69005C6B2C /* indicazioni.png */,
+				25B104CE1CD9FA69005C6B2C /* informazioni_selected.png */,
+				25B104CF1CD9FA69005C6B2C /* informazioni.png */,
+				25B104D01CD9FA69005C6B2C /* mappa_selected.png */,
+				25B104D11CD9FA69005C6B2C /* mappa.png */,
+			);
+			name = Immagini;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,11 +279,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25B104A31CC78842005C6B2C /* MapController.xib in Resources */,
+				25B104D71CD9FA69005C6B2C /* mappa.png in Resources */,
+				25B104D61CD9FA69005C6B2C /* mappa_selected.png in Resources */,
+				25B104DB1CDA0A2C005C6B2C /* map.png in Resources */,
 				25B104A51CC78865005C6B2C /* HelpController.xib in Resources */,
 				25B104771CC7793D005C6B2C /* LaunchScreen.storyboard in Resources */,
+				25B104D91CD9FA93005C6B2C /* MapController.xib in Resources */,
 				25B104741CC7793D005C6B2C /* Assets.xcassets in Resources */,
+				25B104D31CD9FA69005C6B2C /* indicazioni.png in Resources */,
+				25B104D51CD9FA69005C6B2C /* informazioni.png in Resources */,
 				25B104721CC7793D005C6B2C /* Main.storyboard in Resources */,
+				25B104D41CD9FA69005C6B2C /* informazioni_selected.png in Resources */,
+				25B104D21CD9FA69005C6B2C /* indicazioni_selected.png in Resources */,
 				25B104A71CC78870005C6B2C /* IndicationsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,6 +549,7 @@
 				25B104931CC7793D005C6B2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25B104941CC7793D005C6B2C /* Build configuration list for PBXNativeTarget "IUMTests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +558,7 @@
 				25B104961CC7793D005C6B2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25B104971CC7793D005C6B2C /* Build configuration list for PBXNativeTarget "IUMUITests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +567,7 @@
 				25B104991CC7793D005C6B2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
