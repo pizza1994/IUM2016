@@ -32,6 +32,7 @@
 		25B104E11CDC9AE5005C6B2C /* popup_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104E01CDC9AE5005C6B2C /* popup_small.png */; };
 		25B104E31CDC9C7D005C6B2C /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B104E21CDC9C7D005C6B2C /* Preview.swift */; };
 		25B104E51CDCAA8F005C6B2C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B104E41CDCAA8F005C6B2C /* MapView.swift */; };
+		25B104E91CDF864A005C6B2C /* previewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104E81CDF864A005C6B2C /* previewView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		25B104E01CDC9AE5005C6B2C /* popup_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup_small.png; sourceTree = "<group>"; };
 		25B104E21CDC9C7D005C6B2C /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		25B104E41CDCAA8F005C6B2C /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		25B104E81CDF864A005C6B2C /* previewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = previewView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				25B104751CC7793D005C6B2C /* LaunchScreen.storyboard */,
 				25B104781CC7793D005C6B2C /* Info.plist */,
 				25B104A01CC78463005C6B2C /* ContainerViewController.swift */,
+				25B104E81CDF864A005C6B2C /* previewView.xib */,
 				25B104D81CD9FA93005C6B2C /* MapController.xib */,
 				25B104A41CC78865005C6B2C /* HelpController.xib */,
 				25B104A61CC78870005C6B2C /* IndicationsController.xib */,
@@ -307,6 +310,7 @@
 				25B104721CC7793D005C6B2C /* Main.storyboard in Resources */,
 				25B104DF1CDC9A2D005C6B2C /* popup.png in Resources */,
 				25B104D41CD9FA69005C6B2C /* informazioni_selected.png in Resources */,
+				25B104E91CDF864A005C6B2C /* previewView.xib in Resources */,
 				25B104D21CD9FA69005C6B2C /* indicazioni_selected.png in Resources */,
 				25B104A71CC78870005C6B2C /* IndicationsController.xib in Resources */,
 			);

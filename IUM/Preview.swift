@@ -8,29 +8,56 @@
 
 import UIKit
 
-class Preview : UIView{
+@IBDesignable class Preview : UIView{
 
     private var opera: Opera!
-    var authorLabel: UILabel!
-    var yearLabel: UILabel!
-    var titleLabel: UILabel!
+    @IBOutlet var authorLabel: UILabel!
+    @IBOutlet var yearLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
+    var view:UIView!
     
-    init(opera: Opera!){
-        super.init(frame: CGRect(x: 0, y: 0, width: 600/4, height: 183/4))
+    init(opera: Opera!, x: CGFloat, y: CGFloat){
+        super.init(frame: CGRect(x: x-150, y: y-100, width: 300, height: 100))
         self.opera = opera
-        self.backgroundColor = UIColor(patternImage: UIImage(named: "popup_small.png")!)
+        xibSetup()
+        showInfo()
 
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)!
+        xibSetup()
+        showInfo()
+        
     }
     
     func showInfo(){
        
         authorLabel.text = opera.getAuthor()
-        yearLabel.text = String(opera.getYear())
+        if(opera.getYear() != nil){
+            yearLabel.text = String(opera.getYear()!)
+        }
+        else{
+            yearLabel.text = "Sconosciuto"
+        }
         titleLabel.text = opera.getTitle()
+    }
+    
+    func loadViewFromNib() -> UIView {
+        
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let nib = UINib(nibName: "previewView", bundle: bundle)
+        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        
+        return view
+    }
+    
+    func xibSetup() {
+        view = loadViewFromNib()
+        view.frame = bounds
+        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        
+        addSubview(view)
     }
     
 }

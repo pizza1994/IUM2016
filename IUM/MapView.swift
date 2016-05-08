@@ -11,6 +11,7 @@ import UIKit
 class MapView : UIScrollView{
    
     var imageView : UIImageView!
+    var popupPreview : Preview?
 
     init(){
         super.init(frame: CGRect(x: 0, y: 82, width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height))
@@ -32,15 +33,16 @@ class MapView : UIScrollView{
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         
         if let touch = touches.first {
+            if(popupPreview != nil){
+                self.popupPreview!.removeFromSuperview()
+            }
             let position :CGPoint = touch.locationInView(self)
-            self.addSubview(Preview(opera: Opera(title: "", author: "", year: 1991, textDescription: "", audioDescriprion: nil)))
-            print("entrato");
+            popupPreview = Preview(opera: Opera(title: "Mona Lisa", author: "Gianni Fenu", year: 3011, textDescription: "", audioDescriprion: nil), x: position.x, y: position.y)
+            self.addSubview(popupPreview!)
             
             
         }
-        else{
-            //self.view.willRemoveSubview(<#T##subview: UIView##UIView#>)
-        }
+       
     }
 
     
