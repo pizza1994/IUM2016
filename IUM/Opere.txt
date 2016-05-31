@@ -1,0 +1,38 @@
+﻿1.
+<titolo>Il giuramento degli Orazi</>
+<autore>Jacques-Louis David</>
+<anno>1784</>
+<testo>Il dipinto è tratto da una leggenda romana, secondo cui, durante il regno di Tullio Ostilio, per decidere l'esito della guerra di Roma e Alba Longa, tre fratelli romani (gli Orazi) si dovettero scontrare contro tre fratelli di Alba Longa (i Curiazi). Il quadro è caratterizzato da tre scene rappresentanti i tre fratelli con simbolo di uguaglianza, libertà e fratellanza, il padre che dona le spade ai figli come segno di patria e morte e l’attesa delle donne. La donna che piange seduta è una delle sorelle degli Orazi (Camilla) che, destinata sposa a uno dei Curiazi, si rende conto che perderà qualcuno di caro in entrambi i casi. Invece le donne accanto sono le mogli con i figli, tristi per la loro partenza.</>
+<audio>/Audio/1.mp3</>
+
+
+2.
+<titolo>Amore e psiche</>
+<autore>Antonio Canova</>
+<anno>1788-1793</>
+<testo>L'opera rappresenta, con un erotismo sottile e raffinato, il dio Amore mentre contempla con tenerezza il volto della fanciulla amata, ricambiato da Psiche con una dolcezza di pari intensità. Le due figure sono infatti rappresentate nell'atto subito precedente il bacio, un momento carico di tensione. I personaggi, nei corpi adolescenziali e con le loro forme perfette, sono idealizzati secondo un principio di bellezza assoluta e spirituale. Il gruppo scultoreo è posto, con il consenso dell'autore, su una pedana rotante, in modo che lo spettatore possa coglierne in pieno i pregi formali.</>
+<audio>/Audio/2.mp3</>
+
+
+3.
+<titolo>Vergine delle rocce</>
+<autore>Leonardo da Vinci</>
+<anno>1483-1486</>
+<testo>Il soggetto dell’opera è il leggendario incontro tra i piccoli Gesù e Giovanni narrato nella Vita di Giovanni secondo Serapione[3] e in altri testi sull'infanzia di Cristo. La scena si svolge in un umido paesaggio roccioso, in cui dominano fiori e piante acquatiche e descritti con minuzia da botanico; da lontano si intravede un corso d’acqua. Al centro Maria allunga la mano destra a proteggere il piccolo san Giovanni in preghiera, inginocchiato e rivolto a Gesù Bambino, nell’atto di benedirlo e con il corpo in torsione. Dietro di lui si trova un angelo, con un vaporoso mantello rosso, che guarda direttamente verso lo spettatore con un lieve sorriso, con la mano destra indica il Battista. La mano sinistra di Maria è invece protesa a proteggere il figlio. Elementi non meno importanti sono le due cavità sullo sfondo, che rivelano vedute di speroni rocciosi e gruppi di rocce irte, che sfumano in lontananza tramite la tecnica della prospettiva aerea di cui Leonardo è considerato l’iniziatore.</>
+<audio>/Audio/3.mp3</>
+
+
+4.
+<titolo>La libertà che guida il popolo</>
+<autore>Eugène Delacroix</>
+<anno>1830</>
+<testo>L’opera ricorda la lotta dei parigini di ogni classe sociale contro la politica reazionaria di Carlo X di Francia. Il personaggio della libertà costituisce il primo tentativo di riprodurre un nudo femminile in contesto contermporaneo (in quanto era ben accetto solo il nudo classico). L’autore riesce a mitigare l’effetto coprendo in parte il corpo e dando alla donna il significato allegorico della dea Libertà pur nelle sue vesti di donna del popolo. Questa donna, rappresentante Marianne (simbolo della nazione francese) omaggia la Venere di Milo, scoperta nel 1820. Ella indossa il berretto frigio, simbolo di libertà, stringe nella destra la bandiera repubblicana francese e nella sinistra un fucile. La Libertà ha una posa esortatrice ed è monumentale anche se in movimento impetuoso.</>
+<audio>/Audio/4.mp3</>
+
+
+5.
+<titolo>Nike di Samotracia</>
+<autore>Pitocrito</>
+<anno>200-180 a.C.</>
+<testo>La statua rappresenta la giovane dea alata, figlia di Pallante, che porta l'annuncio delle vittorie militari, mentre si posa sulla prua di una nave da battaglia (il basamento, pure in pietra). Strettamente legata ad Atena, le venne tributato culto individuale solo a partire dall'epoca ellenistica, cui appartiene l'opera, forse a seguito delle imprese di Alessandro Magno. Un vento impetuoso investe la figura protesa in avanti, muovendo il panneggio che aderisce strettamente al corpo e crea un gioco chiaroscurale di pieghette dall'altissimo valore virtuosistico, in grado di valorizzare il risalto dello slancio.Scolpita nel pregiato marmo di Paro, la dea posa con leggerezza il piede destro sulla nave, mentre per il fitto battere delle ali, che frenano l'impeto del volo, il petto si protende in avanti e la gamba sinistra rimane indietro. Le braccia sono perdute, il braccio destro era probabilmente abbassato, a reggere il pennone appoggiato alla stessa spalla, mentre il braccio sinistro era sollevato, con la mano aperta a compiere un gesto di saluto, oppure a reggere una corona.</>
+<audio>/Audio/5.mp3</>

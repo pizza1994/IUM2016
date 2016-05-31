@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2571D7AB1CFDD13600B99A2B /* Opere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2571D7AA1CFDD13600B99A2B /* Opere.txt */; };
 		25B1046D1CC7793D005C6B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1046C1CC7793D005C6B2C /* AppDelegate.swift */; };
 		25B1046F1CC7793D005C6B2C /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1046E1CC7793D005C6B2C /* MapController.swift */; };
 		25B104721CC7793D005C6B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B104701CC7793D005C6B2C /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		25B104E31CDC9C7D005C6B2C /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B104E21CDC9C7D005C6B2C /* Preview.swift */; };
 		25B104E51CDCAA8F005C6B2C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B104E41CDCAA8F005C6B2C /* MapView.swift */; };
 		25B104E91CDF864A005C6B2C /* previewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104E81CDF864A005C6B2C /* previewView.xib */; };
+		25EA06861CE1BFDF00C8389B /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA06851CE1BFDF00C8389B /* Popup.swift */; };
+		25EA06881CE1C07D00C8389B /* popupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25EA06871CE1C07D00C8389B /* popupView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2571D7AA1CFDD13600B99A2B /* Opere.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Opere.txt; sourceTree = "<group>"; };
 		25B104691CC7793D005C6B2C /* IUM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B1046C1CC7793D005C6B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25B1046E1CC7793D005C6B2C /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,8 @@
 		25B104E21CDC9C7D005C6B2C /* Preview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
 		25B104E41CDCAA8F005C6B2C /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		25B104E81CDF864A005C6B2C /* previewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = previewView.xib; sourceTree = "<group>"; };
+		25EA06851CE1BFDF00C8389B /* Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		25EA06871CE1C07D00C8389B /* popupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popupView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,12 +141,14 @@
 		25B1046B1CC7793D005C6B2C /* IUM */ = {
 			isa = PBXGroup;
 			children = (
+				2571D7AA1CFDD13600B99A2B /* Opere.txt */,
 				25B104CB1CD9F52D005C6B2C /* Immagini */,
 				25B104DC1CDC9778005C6B2C /* Opera.swift */,
-				25B104E21CDC9C7D005C6B2C /* Preview.swift */,
 				25B1046C1CC7793D005C6B2C /* AppDelegate.swift */,
 				25B1046E1CC7793D005C6B2C /* MapController.swift */,
 				25B104E41CDCAA8F005C6B2C /* MapView.swift */,
+				25B104E21CDC9C7D005C6B2C /* Preview.swift */,
+				25EA06851CE1BFDF00C8389B /* Popup.swift */,
 				25B1049C1CC77C25005C6B2C /* IndicationsController.swift */,
 				25B1049E1CC77C2F005C6B2C /* HelpController.swift */,
 				25B104701CC7793D005C6B2C /* Main.storyboard */,
@@ -148,6 +156,7 @@
 				25B104751CC7793D005C6B2C /* LaunchScreen.storyboard */,
 				25B104781CC7793D005C6B2C /* Info.plist */,
 				25B104A01CC78463005C6B2C /* ContainerViewController.swift */,
+				25EA06871CE1C07D00C8389B /* popupView.xib */,
 				25B104E81CDF864A005C6B2C /* previewView.xib */,
 				25B104D81CD9FA93005C6B2C /* MapController.xib */,
 				25B104A41CC78865005C6B2C /* HelpController.xib */,
@@ -300,6 +309,7 @@
 				25B104D71CD9FA69005C6B2C /* mappa.png in Resources */,
 				25B104D61CD9FA69005C6B2C /* mappa_selected.png in Resources */,
 				25B104E11CDC9AE5005C6B2C /* popup_small.png in Resources */,
+				25EA06881CE1C07D00C8389B /* popupView.xib in Resources */,
 				25B104DB1CDA0A2C005C6B2C /* map.png in Resources */,
 				25B104A51CC78865005C6B2C /* HelpController.xib in Resources */,
 				25B104771CC7793D005C6B2C /* LaunchScreen.storyboard in Resources */,
@@ -310,6 +320,7 @@
 				25B104721CC7793D005C6B2C /* Main.storyboard in Resources */,
 				25B104DF1CDC9A2D005C6B2C /* popup.png in Resources */,
 				25B104D41CD9FA69005C6B2C /* informazioni_selected.png in Resources */,
+				2571D7AB1CFDD13600B99A2B /* Opere.txt in Resources */,
 				25B104E91CDF864A005C6B2C /* previewView.xib in Resources */,
 				25B104D21CD9FA69005C6B2C /* indicazioni_selected.png in Resources */,
 				25B104A71CC78870005C6B2C /* IndicationsController.xib in Resources */,
@@ -337,6 +348,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25EA06861CE1BFDF00C8389B /* Popup.swift in Sources */,
 				25B1049D1CC77C25005C6B2C /* IndicationsController.swift in Sources */,
 				25B104E51CDCAA8F005C6B2C /* MapView.swift in Sources */,
 				25B104A11CC78463005C6B2C /* ContainerViewController.swift in Sources */,
