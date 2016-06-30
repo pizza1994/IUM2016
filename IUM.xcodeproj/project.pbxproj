@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2571D7AB1CFDD13600B99A2B /* Opere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2571D7AA1CFDD13600B99A2B /* Opere.txt */; };
+		25912F931D250CDD00378D77 /* punto_interesse.png in Resources */ = {isa = PBXBuildFile; fileRef = 25912F921D250CDD00378D77 /* punto_interesse.png */; };
 		25B1046D1CC7793D005C6B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1046C1CC7793D005C6B2C /* AppDelegate.swift */; };
 		25B1046F1CC7793D005C6B2C /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1046E1CC7793D005C6B2C /* MapController.swift */; };
 		25B104721CC7793D005C6B2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B104701CC7793D005C6B2C /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		2571D7AA1CFDD13600B99A2B /* Opere.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Opere.txt; sourceTree = "<group>"; };
+		25912F921D250CDD00378D77 /* punto_interesse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punto_interesse.png; sourceTree = "<group>"; };
 		25B104691CC7793D005C6B2C /* IUM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25B1046C1CC7793D005C6B2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25B1046E1CC7793D005C6B2C /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				25B104E01CDC9AE5005C6B2C /* popup_small.png */,
 				25B104DE1CDC9A2D005C6B2C /* popup.png */,
 				25B104CC1CD9FA69005C6B2C /* indicazioni_selected.png */,
+				25912F921D250CDD00378D77 /* punto_interesse.png */,
 				25B104CD1CD9FA69005C6B2C /* indicazioni.png */,
 				25B104CE1CD9FA69005C6B2C /* informazioni_selected.png */,
 				25B104CF1CD9FA69005C6B2C /* informazioni.png */,
@@ -318,6 +321,7 @@
 				25B104D31CD9FA69005C6B2C /* indicazioni.png in Resources */,
 				25B104D51CD9FA69005C6B2C /* informazioni.png in Resources */,
 				25B104721CC7793D005C6B2C /* Main.storyboard in Resources */,
+				25912F931D250CDD00378D77 /* punto_interesse.png in Resources */,
 				25B104DF1CDC9A2D005C6B2C /* popup.png in Resources */,
 				25B104D41CD9FA69005C6B2C /* informazioni_selected.png in Resources */,
 				2571D7AB1CFDD13600B99A2B /* Opere.txt in Resources */,
@@ -500,10 +504,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IUM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pizza.IUM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -512,10 +519,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = IUM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pizza.IUM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

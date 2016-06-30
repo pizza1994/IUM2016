@@ -23,12 +23,14 @@ class MapView : UIScrollView{
         self.addSubview(imageView)
         
         let buttonArray = NSMutableArray()
-        let coordinates = [CGRectMake(100, 100, 20, 20), CGRectMake(150, 130, 20, 20), CGRectMake(300, 280, 20, 20), CGRectMake(325, 400, 20, 20), CGRectMake(500, 200, 20, 20)]
+        let coordinates = [CGRectMake(160, 80, 20, 20), CGRectMake(160, 130, 20, 20), CGRectMake(160, 250, 20, 20), CGRectMake(325, 400, 20, 20), CGRectMake(500, 200, 20, 20)]
         
-        for i in 0 ... 4{
-            let button   = UIButton(type: UIButtonType.RoundedRect) as UIButton
+        for i in 0 ... (coordinates.count-1){
+            let button   = UIButton(type: UIButtonType.Custom) as UIButton
             button.frame = coordinates[i]
-            button.backgroundColor = UIColor.redColor()
+            let image = UIImage(named: "punto_interesse.png") as UIImage?
+            button.addTarget(self, action: #selector(MapView.buttonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+            button.setImage(image, forState: .Normal)
             buttonArray.addObject(button)
 
         }
@@ -38,6 +40,32 @@ class MapView : UIScrollView{
         }
 
         
+
+    }
+    
+    func buttonPressed(sender: UIButton!){
+        for view in self.subviews{
+            if (view.isKindOfClass(Popup)){
+                view.removeFromSuperview()
+            }
+        }
+        let position :CGPoint = CGPoint(x: sender.frame.origin.x+10, y: sender.frame.origin.y+25);
+        popupPreview = Preview(opera: Opera(title: "Mona Lisa", author: "Gianni Fenu", year: 3011, textDescription: "", audioDescriprion: nil), x_: position.x, y_: position.y, width_: 300, height_:100)
+        self.addSubview(popupPreview!)
+        
+        
+        if (position.x+150 > UIScreen.mainScreen().bounds.size.width){
+            self.setContentOffset(CGPointMake(position.x-187, 0), animated: true)
+        }
+        else if(position.x < UIScreen.mainScreen().bounds.size.width){
+            self.setContentOffset(CGPointMake(position.x-187, 0), animated: true)
+            
+        }
+        
+        if (position.y-86 < 0){
+            
+            self.setContentOffset(CGPointMake(position.x-187, position.y-100), animated: true)
+        }
 
     }
     
@@ -60,26 +88,7 @@ class MapView : UIScrollView{
                     view.removeFromSuperview()
                 }
             }
-            let position :CGPoint = touch.locationInView(self)
-            popupPreview = Preview(opera: Opera(title: "Mona Lisa", author: "Gianni Fenu", year: 3011, textDescription: "", audioDescriprion: nil), x_: position.x, y_: position.y, width_: 300, height_:100)
-            self.addSubview(popupPreview!)
-
-
-            if (position.x+150 > UIScreen.mainScreen().bounds.size.width){
-                print("entrato x")
-                self.setContentOffset(CGPointMake(position.x-187, 0), animated: true)
-            }
-            else if(position.x < UIScreen.mainScreen().bounds.size.width){
-                self.setContentOffset(CGPointMake(position.x-187, 0), animated: true)
-
-            }
             
-            if (position.y-86 < 0){
-                print("entrato y")
-
-                self.setContentOffset(CGPointMake(position.x-187, position.y-100), animated: true)
-            }
-        
 
             
             
