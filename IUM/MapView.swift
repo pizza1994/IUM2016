@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MapView : UIScrollView{
    
@@ -62,17 +63,15 @@ class MapView : UIScrollView{
         
         var operaTitle : String = ""
         var operaAuthor : String = ""
-        var operaYear : Int = 0
+        var operaYear : String = ""
         var textDescription : String = ""
         var audioDescription : String = ""
         var flag : Bool = false
         var i : Int = 0
         
         for word in text!{
-            print(word.characters.count)
             
             if(word == String(sender.tag)+"("){
-                print("ENTRATO")
                 flag = true
             }
             if flag{
@@ -83,7 +82,7 @@ class MapView : UIScrollView{
                     operaAuthor = text![i+1]
                 }
                 else if word == "<anno>"{
-                    operaYear = Int(text![i+1])!
+                    operaYear = text![i+1]
                 }
                 else if word == "<testo>"{
                     textDescription = text![i+1]
@@ -99,9 +98,11 @@ class MapView : UIScrollView{
             }
             i += 1
         }
+    
+        let sound: NSURL? =   NSURL(fileURLWithPath: (NSBundle.mainBundle().pathForResource("1", ofType: "mp3"))!)
+        let audio = try? AVAudioPlayer(contentsOfURL:sound!)
         
-        
-        popupPreview = Preview(opera: Opera(title: operaTitle, author: operaAuthor, year: operaYear, textDescription: textDescription, audioDescriprion: nil), x_: position.x, y_: position.y, width_: 300, height_:100)
+        popupPreview = Preview(opera: Opera(title: operaTitle, author: operaAuthor, year: operaYear, textDescription: textDescription, audioDescriprion: audio), x_: position.x, y_: position.y, width_: 300, height_:100)
         
         
         self.addSubview(popupPreview!)

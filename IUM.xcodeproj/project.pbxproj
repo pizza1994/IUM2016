@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252A40051D26B174007C206A /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 252A40041D26B174007C206A /* 1.mp3 */; };
 		2571D7AB1CFDD13600B99A2B /* Opere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2571D7AA1CFDD13600B99A2B /* Opere.txt */; };
 		25912F931D250CDD00378D77 /* punto_interesse.png in Resources */ = {isa = PBXBuildFile; fileRef = 25912F921D250CDD00378D77 /* punto_interesse.png */; };
 		25B1046D1CC7793D005C6B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1046C1CC7793D005C6B2C /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252A40041D26B174007C206A /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
 		2571D7AA1CFDD13600B99A2B /* Opere.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Opere.txt; sourceTree = "<group>"; };
 		25912F921D250CDD00378D77 /* punto_interesse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punto_interesse.png; sourceTree = "<group>"; };
 		25B104691CC7793D005C6B2C /* IUM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				2571D7AA1CFDD13600B99A2B /* Opere.txt */,
+				252A40041D26B174007C206A /* 1.mp3 */,
 				25B104CB1CD9F52D005C6B2C /* Immagini */,
 				25B104DC1CDC9778005C6B2C /* Opera.swift */,
 				25B1046C1CC7793D005C6B2C /* AppDelegate.swift */,
@@ -321,6 +324,7 @@
 				25B104D31CD9FA69005C6B2C /* indicazioni.png in Resources */,
 				25B104D51CD9FA69005C6B2C /* informazioni.png in Resources */,
 				25B104721CC7793D005C6B2C /* Main.storyboard in Resources */,
+				252A40051D26B174007C206A /* 1.mp3 in Resources */,
 				25912F931D250CDD00378D77 /* punto_interesse.png in Resources */,
 				25B104DF1CDC9A2D005C6B2C /* popup.png in Resources */,
 				25B104D41CD9FA69005C6B2C /* informazioni_selected.png in Resources */,

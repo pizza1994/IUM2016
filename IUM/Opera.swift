@@ -13,13 +13,13 @@ class Opera : NSObject{
     
     private var title: String!
     private var author: String?
-    private var year: Int?
+    private var year: String?
     private var textDescription: String!
     private var audioDescription: AVAudioPlayer?
     
     
     
-    init(title: String, author: String?, year: Int, textDescription: String!, audioDescriprion: AVAudioPlayer?){
+    init(title: String, author: String?, year: String, textDescription: String!, audioDescriprion: AVAudioPlayer?){
         
         self.title = title
         self.author = author
@@ -40,7 +40,7 @@ class Opera : NSObject{
         return self.author
         
     }
-    func getYear() -> Int?{
+    func getYear() -> String?{
         
         return self.year
         
