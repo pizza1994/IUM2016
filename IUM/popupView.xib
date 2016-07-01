@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Popup" customModule="IUM" customModuleProvider="target">
             <connections>
                 <outlet property="authorLabel" destination="c7H-ih-45h" id="sxJ-YL-DE9"/>
+                <outlet property="descrizione" destination="EN1-ys-rO5" id="Mf5-K1-zJE"/>
                 <outlet property="titleLabel" destination="VKj-Se-ZAR" id="XqE-KA-4B5"/>
                 <outlet property="yearLabel" destination="f2U-Cj-5vA" id="njk-QQ-Ujx"/>
             </connections>
