@@ -14,21 +14,28 @@ class MapView : UIScrollView{
     var imageView : UIImageView!
     var popupPreview : Preview?
     var text: [String]?
+    
 
     init(){
         super.init(frame: CGRect(x: 0, y: 82, width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height))
-        imageView = UIImageView(image: UIImage(named: "map.png"))
+        
+        let opera_width = CGFloat(20);
+        let opera_height = CGFloat(20*1.67);
+        let buttonArray = NSMutableArray()
+        let coordinates = [CGRectMake(160, 80, opera_width, opera_height), CGRectMake(160, 130, opera_width, opera_height), CGRectMake(160, 250, opera_width, opera_height), CGRectMake(325, 400, opera_width, opera_height), CGRectMake(500, 200, opera_width, opera_height)]
+        let location =  NSBundle.mainBundle().pathForResource("Opere", ofType: "txt")
+        let fileContent : String = try! String(contentsOfFile: location!, encoding: NSUTF8StringEncoding)
+        let separators = NSCharacterSet(charactersInString: "$\n")
+        
+        
+        imageView = UIImageView(image: UIImage(named: "map001.png"))
         imageView.userInteractionEnabled = true
         self.contentSize = imageView.bounds.size
         self.bounces = false
         self.userInteractionEnabled = true
         self.addSubview(imageView)
         
-        let buttonArray = NSMutableArray()
-        let coordinates = [CGRectMake(160, 80, 20, 20), CGRectMake(160, 130, 20, 20), CGRectMake(160, 250, 20, 20), CGRectMake(325, 400, 20, 20), CGRectMake(500, 200, 20, 20)]
-        let location =  NSBundle.mainBundle().pathForResource("Opere", ofType: "txt")
-        let fileContent : String = try! String(contentsOfFile: location!, encoding: NSUTF8StringEncoding)
-        let separators = NSCharacterSet(charactersInString: "$\n")
+        
         
         text = fileContent.componentsSeparatedByCharactersInSet(separators);
         
@@ -36,7 +43,7 @@ class MapView : UIScrollView{
             
             let button   = UIButton(type: UIButtonType.Custom) as UIButton
             button.frame = coordinates[i]
-            let image = UIImage(named: "punto_interesse.png") as UIImage?
+            let image = UIImage(named: "punto-opera.png") as UIImage?
             button.addTarget(self, action: #selector(MapView.buttonPressed(_:)), forControlEvents: UIControlEvents.TouchUpInside)
             button.setImage(image, forState: .Normal)
             button.tag = (i+1)
@@ -47,7 +54,10 @@ class MapView : UIScrollView{
         for button in buttonArray{
             self.addSubview(button as! UIView)
         }
-
+        
+        let myPosition = UIImageView(image: UIImage(named: "posizione_utente.png"))
+        myPosition.frame = CGRectMake(250, 90, 25, 25)
+        self.addSubview(myPosition)
         
 
     }

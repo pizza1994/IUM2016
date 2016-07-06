@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		252A40051D26B174007C206A /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 252A40041D26B174007C206A /* 1.mp3 */; };
+		252A40081D2D1190007C206A /* map001.png in Resources */ = {isa = PBXBuildFile; fileRef = 252A40071D2D1190007C206A /* map001.png */; };
+		252A400A1D2D122C007C206A /* posizione_utente.png in Resources */ = {isa = PBXBuildFile; fileRef = 252A40091D2D122C007C206A /* posizione_utente.png */; };
+		252A400C1D2D1234007C206A /* punto-opera.png in Resources */ = {isa = PBXBuildFile; fileRef = 252A400B1D2D1234007C206A /* punto-opera.png */; };
+		252A40101D2D1248007C206A /* play-pausa.png in Resources */ = {isa = PBXBuildFile; fileRef = 252A400D1D2D1248007C206A /* play-pausa.png */; };
+		252A40111D2D1248007C206A /* scorri-giu.png in Resources */ = {isa = PBXBuildFile; fileRef = 252A400E1D2D1248007C206A /* scorri-giu.png */; };
+		252A40121D2D1248007C206A /* scorri-su.png in Resources */ = {isa = PBXBuildFile; fileRef = 252A400F1D2D1248007C206A /* scorri-su.png */; };
+		252A40141D2D1A3D007C206A /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 252A40131D2D1A3D007C206A /* 2.mp3 */; };
 		2571D7AB1CFDD13600B99A2B /* Opere.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2571D7AA1CFDD13600B99A2B /* Opere.txt */; };
 		25912F931D250CDD00378D77 /* punto_interesse.png in Resources */ = {isa = PBXBuildFile; fileRef = 25912F921D250CDD00378D77 /* punto_interesse.png */; };
 		25B1046D1CC7793D005C6B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B1046C1CC7793D005C6B2C /* AppDelegate.swift */; };
@@ -59,6 +66,13 @@
 
 /* Begin PBXFileReference section */
 		252A40041D26B174007C206A /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		252A40071D2D1190007C206A /* map001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map001.png; sourceTree = "<group>"; };
+		252A40091D2D122C007C206A /* posizione_utente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = posizione_utente.png; sourceTree = "<group>"; };
+		252A400B1D2D1234007C206A /* punto-opera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "punto-opera.png"; sourceTree = "<group>"; };
+		252A400D1D2D1248007C206A /* play-pausa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play-pausa.png"; sourceTree = "<group>"; };
+		252A400E1D2D1248007C206A /* scorri-giu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scorri-giu.png"; sourceTree = "<group>"; };
+		252A400F1D2D1248007C206A /* scorri-su.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scorri-su.png"; sourceTree = "<group>"; };
+		252A40131D2D1A3D007C206A /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
 		2571D7AA1CFDD13600B99A2B /* Opere.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Opere.txt; sourceTree = "<group>"; };
 		25912F921D250CDD00378D77 /* punto_interesse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = punto_interesse.png; sourceTree = "<group>"; };
 		25B104691CC7793D005C6B2C /* IUM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IUM.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +161,7 @@
 			children = (
 				2571D7AA1CFDD13600B99A2B /* Opere.txt */,
 				252A40041D26B174007C206A /* 1.mp3 */,
+				252A40131D2D1A3D007C206A /* 2.mp3 */,
 				25B104CB1CD9F52D005C6B2C /* Immagini */,
 				25B104DC1CDC9778005C6B2C /* Opera.swift */,
 				25B1046C1CC7793D005C6B2C /* AppDelegate.swift */,
@@ -166,6 +181,7 @@
 				25B104D81CD9FA93005C6B2C /* MapController.xib */,
 				25B104A41CC78865005C6B2C /* HelpController.xib */,
 				25B104A61CC78870005C6B2C /* IndicationsController.xib */,
+				252A40071D2D1190007C206A /* map001.png */,
 				25B104DA1CDA0A2C005C6B2C /* map.png */,
 			);
 			path = IUM;
@@ -192,6 +208,11 @@
 		25B104CB1CD9F52D005C6B2C /* Immagini */ = {
 			isa = PBXGroup;
 			children = (
+				252A400D1D2D1248007C206A /* play-pausa.png */,
+				252A400E1D2D1248007C206A /* scorri-giu.png */,
+				252A400F1D2D1248007C206A /* scorri-su.png */,
+				252A400B1D2D1234007C206A /* punto-opera.png */,
+				252A40091D2D122C007C206A /* posizione_utente.png */,
 				25B104E01CDC9AE5005C6B2C /* popup_small.png */,
 				25B104DE1CDC9A2D005C6B2C /* popup.png */,
 				25B104CC1CD9FA69005C6B2C /* indicazioni_selected.png */,
@@ -312,9 +333,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				252A40111D2D1248007C206A /* scorri-giu.png in Resources */,
 				25B104D71CD9FA69005C6B2C /* mappa.png in Resources */,
+				252A400A1D2D122C007C206A /* posizione_utente.png in Resources */,
 				25B104D61CD9FA69005C6B2C /* mappa_selected.png in Resources */,
 				25B104E11CDC9AE5005C6B2C /* popup_small.png in Resources */,
+				252A40141D2D1A3D007C206A /* 2.mp3 in Resources */,
 				25EA06881CE1C07D00C8389B /* popupView.xib in Resources */,
 				25B104DB1CDA0A2C005C6B2C /* map.png in Resources */,
 				25B104A51CC78865005C6B2C /* HelpController.xib in Resources */,
@@ -323,7 +347,11 @@
 				25B104741CC7793D005C6B2C /* Assets.xcassets in Resources */,
 				25B104D31CD9FA69005C6B2C /* indicazioni.png in Resources */,
 				25B104D51CD9FA69005C6B2C /* informazioni.png in Resources */,
+				252A400C1D2D1234007C206A /* punto-opera.png in Resources */,
+				252A40081D2D1190007C206A /* map001.png in Resources */,
+				252A40101D2D1248007C206A /* play-pausa.png in Resources */,
 				25B104721CC7793D005C6B2C /* Main.storyboard in Resources */,
+				252A40121D2D1248007C206A /* scorri-su.png in Resources */,
 				252A40051D26B174007C206A /* 1.mp3 in Resources */,
 				25912F931D250CDD00378D77 /* punto_interesse.png in Resources */,
 				25B104DF1CDC9A2D005C6B2C /* popup.png in Resources */,

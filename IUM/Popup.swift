@@ -13,6 +13,7 @@ import UIKit
     @IBOutlet var descrizione: UITextView!
     @IBOutlet var scrollDown: UIButton!
     @IBOutlet var scrollUp: UIButton!
+    @IBOutlet var progressBar: UIProgressView!
     
 
     
@@ -65,19 +66,33 @@ import UIKit
 
     }
     
-    @IBAction func play(sender: UIButton!){
-        getOpera().getAudioDescription()!.prepareToPlay()
-        getOpera().getAudioDescription()!.play()
+    @IBAction func play_pause(sender: UIButton!){
+        let timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: #selector(self.updateBar), userInfo: nil, repeats: true)
+        if(sender.tag == 1 || !getOpera().getAudioDescription()!.playing){
+            getOpera().getAudioDescription()!.prepareToPlay()
+            getOpera().getAudioDescription()!.play()
+            sender.tag = 2
+            timer.fire()
+        }
+        else{
+            getOpera().getAudioDescription()!.pause()
+            sender.tag = 1
+            timer.invalidate()
+        }
+        
     }
     
-    @IBAction func pause(sender: UIButton!){
-        getOpera().getAudioDescription()!.pause()
+
+    func updateBar(){
+        let normalizedTime = Float(getOpera().getAudioDescription()!.currentTime / getOpera().getAudioDescription()!.duration)
+        progressBar.progress = normalizedTime
+        if progressBar.progress == 1{
+            progressBar.progress = 0
+        }
     }
-
-
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
+       
     }
 
 

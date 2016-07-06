@@ -10,6 +10,7 @@
             <connections>
                 <outlet property="authorLabel" destination="c7H-ih-45h" id="sxJ-YL-DE9"/>
                 <outlet property="descrizione" destination="EN1-ys-rO5" id="zrY-LQ-OdB"/>
+                <outlet property="progressBar" destination="U24-Oa-M4X" id="ndB-Dh-nJ5"/>
                 <outlet property="scrollDown" destination="iJg-pb-bmq" id="piC-mH-VLS"/>
                 <outlet property="scrollUp" destination="MtF-f7-GX6" id="ra6-Sq-LgH"/>
                 <outlet property="titleLabel" destination="VKj-Se-ZAR" id="XqE-KA-4B5"/>
@@ -53,21 +54,28 @@
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EN1-ys-rO5">
                     <rect key="frame" x="30" y="560" width="240" height="334"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-pb-bmq">
-                    <rect key="frame" x="111" y="404" width="78" height="30"/>
-                    <state key="normal" title="ScrollDown"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-pb-bmq">
+                    <rect key="frame" x="125" y="437" width="50" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Fn2-6S-IDC"/>
+                        <constraint firstAttribute="height" constant="20" id="vrV-UL-0UG"/>
+                    </constraints>
+                    <state key="normal" image="scorri-giu.png"/>
                     <connections>
                         <action selector="scrollDown:" destination="-1" eventType="touchUpInside" id="RCC-6b-qqw"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtF-f7-GX6">
-                    <rect key="frame" x="122" y="507" width="57" height="30"/>
-                    <state key="normal" title="scrollUp"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MtF-f7-GX6">
+                    <rect key="frame" x="125" y="504" width="50" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="i38-BM-mBZ"/>
+                    </constraints>
+                    <state key="normal" image="scorri-su.png"/>
                     <connections>
                         <action selector="scrollUp:" destination="-1" eventType="touchUpInside" id="Ucl-c9-fw2"/>
                     </connections>
@@ -78,44 +86,47 @@
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnu-Qy-laf">
-                    <rect key="frame" x="91" y="187" width="30" height="30"/>
-                    <state key="normal" title="Play"/>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnu-Qy-laf">
+                    <rect key="frame" x="120" y="208" width="60" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="88G-El-amy"/>
+                        <constraint firstAttribute="height" constant="50" id="rBx-bB-6Zx"/>
+                    </constraints>
+                    <state key="normal" image="play-pausa.png"/>
                     <connections>
-                        <action selector="play:" destination="-1" eventType="touchUpInside" id="XL7-k4-2fU"/>
+                        <action selector="play_pause:" destination="-1" eventType="touchUpInside" id="CXU-lb-LDn"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ww-Jp-avi">
-                    <rect key="frame" x="178" y="187" width="42" height="30"/>
-                    <state key="normal" title="Pause"/>
-                    <connections>
-                        <action selector="pause:" destination="-1" eventType="touchUpInside" id="Zsi-xH-zvx"/>
-                    </connections>
-                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U24-Oa-M4X">
+                    <rect key="frame" x="50" y="292" width="200" height="2"/>
+                    <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </progressView>
             </subviews>
             <constraints>
                 <constraint firstItem="EN1-ys-rO5" firstAttribute="leading" secondItem="61L-B1-k6w" secondAttribute="leading" constant="30" id="2eO-Ns-WPr"/>
-                <constraint firstItem="VKj-Se-ZAR" firstAttribute="centerX" secondItem="iJg-pb-bmq" secondAttribute="centerX" id="5KV-Ic-ktk"/>
+                <constraint firstItem="Wnu-Qy-laf" firstAttribute="top" secondItem="f2U-Cj-5vA" secondAttribute="bottom" constant="85" id="3TC-9C-vS8"/>
+                <constraint firstItem="iJg-pb-bmq" firstAttribute="centerX" secondItem="Wnu-Qy-laf" secondAttribute="centerX" id="5b3-tc-f73"/>
+                <constraint firstItem="MtF-f7-GX6" firstAttribute="top" secondItem="Sgd-xe-AyV" secondAttribute="bottom" constant="22" id="6E3-RH-VO0"/>
+                <constraint firstItem="MtF-f7-GX6" firstAttribute="trailing" secondItem="iJg-pb-bmq" secondAttribute="trailing" id="75D-eV-HmL"/>
                 <constraint firstAttribute="trailing" secondItem="c7H-ih-45h" secondAttribute="trailing" constant="141" id="8AB-Ph-Vu1"/>
                 <constraint firstItem="c7H-ih-45h" firstAttribute="leading" secondItem="61L-B1-k6w" secondAttribute="leadingMargin" id="BCh-YA-D9S"/>
                 <constraint firstItem="Sgd-xe-AyV" firstAttribute="top" secondItem="61L-B1-k6w" secondAttribute="top" id="DZP-tO-PMq"/>
                 <constraint firstItem="VKj-Se-ZAR" firstAttribute="leading" secondItem="61L-B1-k6w" secondAttribute="leading" id="IgO-C5-dwC"/>
                 <constraint firstAttribute="bottom" secondItem="ndn-J6-c3H" secondAttribute="bottom" constant="-1" id="JmF-XZ-fIg"/>
+                <constraint firstItem="MtF-f7-GX6" firstAttribute="leading" secondItem="iJg-pb-bmq" secondAttribute="leading" id="L0d-ad-Ntt"/>
                 <constraint firstItem="VKj-Se-ZAR" firstAttribute="trailing" secondItem="ndn-J6-c3H" secondAttribute="trailing" id="Mak-g4-zRh"/>
                 <constraint firstItem="VKj-Se-ZAR" firstAttribute="leading" secondItem="ndn-J6-c3H" secondAttribute="leading" id="PWe-XK-aWG"/>
                 <constraint firstItem="Sgd-xe-AyV" firstAttribute="leading" secondItem="VKj-Se-ZAR" secondAttribute="leading" id="RSc-cx-zyL"/>
-                <constraint firstItem="VKj-Se-ZAR" firstAttribute="centerX" secondItem="MtF-f7-GX6" secondAttribute="centerX" id="UDa-NV-zyJ"/>
-                <constraint firstItem="EN1-ys-rO5" firstAttribute="top" secondItem="MtF-f7-GX6" secondAttribute="bottom" constant="23" id="VBx-f7-TqE"/>
+                <constraint firstItem="EN1-ys-rO5" firstAttribute="top" secondItem="MtF-f7-GX6" secondAttribute="bottom" constant="36" id="Tr5-tD-cUV"/>
                 <constraint firstItem="Sgd-xe-AyV" firstAttribute="trailing" secondItem="VKj-Se-ZAR" secondAttribute="trailing" id="byr-iI-JSj"/>
-                <constraint firstItem="ndn-J6-c3H" firstAttribute="top" secondItem="iJg-pb-bmq" secondAttribute="bottom" constant="49" id="dW0-6a-l9K"/>
                 <constraint firstItem="f2U-Cj-5vA" firstAttribute="trailing" secondItem="61L-B1-k6w" secondAttribute="trailingMargin" id="ec3-UF-UwX"/>
                 <constraint firstItem="VKj-Se-ZAR" firstAttribute="centerX" secondItem="EN1-ys-rO5" secondAttribute="centerX" id="hHb-jq-59C"/>
                 <constraint firstItem="c7H-ih-45h" firstAttribute="top" secondItem="61L-B1-k6w" secondAttribute="top" constant="102" id="hbQ-qI-OSs"/>
                 <constraint firstItem="c7H-ih-45h" firstAttribute="top" secondItem="VKj-Se-ZAR" secondAttribute="bottom" constant="36" id="i50-ot-z4t"/>
                 <constraint firstAttribute="trailing" secondItem="VKj-Se-ZAR" secondAttribute="trailing" id="iEo-oD-4Hz"/>
-                <constraint firstItem="MtF-f7-GX6" firstAttribute="top" secondItem="61L-B1-k6w" secondAttribute="top" constant="507" id="keE-l4-T2m"/>
+                <constraint firstItem="MtF-f7-GX6" firstAttribute="centerX" secondItem="EN1-ys-rO5" secondAttribute="centerX" id="jgN-lf-jud"/>
                 <constraint firstAttribute="bottom" secondItem="EN1-ys-rO5" secondAttribute="bottom" constant="70" id="lGE-8J-E9n"/>
-                <constraint firstItem="MtF-f7-GX6" firstAttribute="centerX" secondItem="EN1-ys-rO5" secondAttribute="centerX" id="pVn-Cd-nxr"/>
+                <constraint firstItem="ndn-J6-c3H" firstAttribute="top" secondItem="iJg-pb-bmq" secondAttribute="bottom" constant="26" id="m2x-tf-7WZ"/>
                 <constraint firstItem="f2U-Cj-5vA" firstAttribute="baseline" secondItem="c7H-ih-45h" secondAttribute="baseline" id="pXu-dx-zQt"/>
                 <constraint firstAttribute="bottom" secondItem="c7H-ih-45h" secondAttribute="bottom" constant="841" id="r7a-Kl-1j7"/>
                 <constraint firstItem="f2U-Cj-5vA" firstAttribute="leading" secondItem="c7H-ih-45h" secondAttribute="trailing" id="zQO-6z-BbE"/>
@@ -125,6 +136,9 @@
         </scrollView>
     </objects>
     <resources>
+        <image name="play-pausa.png" width="415" height="391"/>
         <image name="popup.png" width="600" height="964"/>
+        <image name="scorri-giu.png" width="514" height="342"/>
+        <image name="scorri-su.png" width="514" height="342"/>
     </resources>
 </document>
