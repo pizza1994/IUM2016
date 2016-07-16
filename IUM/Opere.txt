@@ -1,38 +1,66 @@
 ﻿1($
-<titolo>$Il giuramento degli Orazi$</>
-<autore>$Jacques-Louis David$</>
-<anno>$1784$</>
-<testo>$Il dipinto è tratto da una leggenda romana, secondo cui, durante il regno di Tullio Ostilio, per decidere l'esito della guerra di Roma e Alba Longa, tre fratelli romani (gli Orazi) si dovettero scontrare contro tre fratelli di Alba Longa (i Curiazi). Il quadro è caratterizzato da tre scene rappresentanti i tre fratelli con simbolo di uguaglianza, libertà e fratellanza, il padre che dona le spade ai figli come segno di patria e morte e l’attesa delle donne. La donna che piange seduta è una delle sorelle degli Orazi (Camilla) che, destinata sposa a uno dei Curiazi, si rende conto che perderà qualcuno di caro in entrambi i casi. Invece le donne accanto sono le mogli con i figli, tristi per la loro partenza.$</>
+<titolo>$David$</>
+<autore>$Michelangelo$</>
+<anno>$1501-1504$</>
+<testo>$Il David è una celebre scultura Rinascimentale, che ritrae l'eroe biblico nel momento in cui si appresta ad affrontare Golia. E' particolamente importante per l'epoca poiché incarna l'ideale perfetto di bellezza maschile nell'arte. Il soggetto del David, fortemente radicato nella tradizione figurativa fiorentina, venne rielaborato evitando gli schemi compositivi consolidati, scegliendo di rappresentare il momento di concentrazione prima della battaglia. I muscoli del corpo sono poderosi ma ancora a riposo, tuttavia capaci di trasmettere il senso di una straordinaria potenza fisica. L'espressione accigliata e lo sguardo penetrante rivelano la forte concentrazione mentale, manifestando quindi la potenza intellettuale che va a sommarsi a quella fisica.$</>
 <audio>$1$</>
 
 
 2($
-<titolo>$Amore e psiche$</>
-<autore>$Antonio Canova$</>
-<anno>$1788$</>
-<testo>$L'opera rappresenta, con un erotismo sottile e raffinato, il dio Amore mentre contempla con tenerezza il volto della fanciulla amata, ricambiato da Psiche con una dolcezza di pari intensità. Le due figure sono infatti rappresentate nell'atto subito precedente il bacio, un momento carico di tensione. I personaggi, nei corpi adolescenziali e con le loro forme perfette, sono idealizzati secondo un principio di bellezza assoluta e spirituale. Il gruppo scultoreo è posto, con il consenso dell'autore, su una pedana rotante, in modo che lo spettatore possa coglierne in pieno i pregi formali.$</>
+<titolo>$Cristo alla colonna$</>
+<autore>$Bramante$</>
+<anno>$1480-1490$</>
+<testo>$La tavola, che è considerata il miglior saggio di Bramante in pittura, venne commissionata dall'abbazia di Chiaravalle nei pressi di Milano. Si tratta dell'unico dipinto su tavola conosciuto di Bramante. L'opera mostra Cristo legato alla colonna (in questo caso un pilastro ornato con decorazione classicheggiante a bassorilievo) prima della flagellazione, proiettato vicinissimo allo spettatore, come in un contatto quasi diretto, eliminando i tradizionali flagellanti. Questa vicinanza suscita nello spettatore un forte impatto emotivo, accentuando la già struggente scena creando, nel complesso, un'atmosfera di fortissima tensione psicologica. Ancor più i dettagli, come la corda che penzola dal collo del Cristo, contribuiscono a creare quella notevole apprensione emotiva che scaturisce dall'intera composizione.$</>
 <audio>$2$</>
 
-
 3($
-<titolo>$Vergine delle rocce$</>
-<autore>$Leonardo da Vinci$</>
-<anno>$1483$</>
-<testo>$Il soggetto dell’opera è il leggendario incontro tra i piccoli Gesù e Giovanni narrato nella Vita di Giovanni secondo Serapione[3] e in altri testi sull'infanzia di Cristo. La scena si svolge in un umido paesaggio roccioso, in cui dominano fiori e piante acquatiche e descritti con minuzia da botanico; da lontano si intravede un corso d’acqua. Al centro Maria allunga la mano destra a proteggere il piccolo san Giovanni in preghiera, inginocchiato e rivolto a Gesù Bambino, nell’atto di benedirlo e con il corpo in torsione. Dietro di lui si trova un angelo, con un vaporoso mantello rosso, che guarda direttamente verso lo spettatore con un lieve sorriso, con la mano destra indica il Battista. La mano sinistra di Maria è invece protesa a proteggere il figlio. Elementi non meno importanti sono le due cavità sullo sfondo, che rivelano vedute di speroni rocciosi e gruppi di rocce irte, che sfumano in lontananza tramite la tecnica della prospettiva aerea di cui Leonardo è considerato l’iniziatore.$</>
+<titolo>$Morte di un avaro$</>
+<autore>$Hieronymus Bosch$</>
+<anno>$1494$</>
+<testo>$La Morte di un avaro è un dipinto a olio su tavola e rappresenta la condanna dell'Avarizia. E' probabile che l'insieme di pannelli a cui apparteneva ospitasse rappresentazioni dei vizi capitali.  In una stanza, dipinta con una prospettiva grandangolare che ricorda i Primitivi fiamminghi, un magro anziano, l'avaro, sta per essere visitato dalla morte, che si affaccia dall'uscio, impugnando già una freccia che mira all'uomo. Nel momento estremo è confortato da un angelo che gli indica la via della Salvezza, il crocifisso che emana un raggio dalla finestra, mentre un diavolo lo tenta offrendogli un sacco di monete d'oro. Ai piedi del letto un altro personaggio, che fa scorrere un rosario, riempie d'oro una borsa in una cassa, retta da un altro diavolo, mentre altri demoni si contorcono sotto la cassa-forziere (uno brandisce una lettera con sigillo rosso, forse una lettera di indulgenza o un documento che fa riferimento ad attività mercenarie all'avaro), uno si affaccia dal parapetto in primo piano e un sesto spia da sopra il baldacchino. Quest'ultimo tiene in spalla una lanterna che non fa luce, la falsa verità del demonio, in contrapposizione alla luce reale emessa da Cristo.
+Di incerto significato sono infine le armi e i pezzi di armatura in primo piano.$</>
 <audio>$3$</>
 
 
 4($
-<titolo>$La libertà che guida il popolo$</>
-<autore>$Eugène Delacroix$</>
-<anno>$1830$</>
-<testo>$L’opera ricorda la lotta dei parigini di ogni classe sociale contro la politica reazionaria di Carlo X di Francia. Il personaggio della libertà costituisce il primo tentativo di riprodurre un nudo femminile in contesto contermporaneo (in quanto era ben accetto solo il nudo classico). L’autore riesce a mitigare l’effetto coprendo in parte il corpo e dando alla donna il significato allegorico della dea Libertà pur nelle sue vesti di donna del popolo. Questa donna, rappresentante Marianne (simbolo della nazione francese) omaggia la Venere di Milo, scoperta nel 1820. Ella indossa il berretto frigio, simbolo di libertà, stringe nella destra la bandiera repubblicana francese e nella sinistra un fucile. La Libertà ha una posa esortatrice ed è monumentale anche se in movimento impetuoso.$</>
+<titolo>$Ecce Homo$</>
+<autore>$Hieronymus Bosch$</>
+<anno>$1476$</>
+<testo>$L'Ecce Homo è un dipinto a olio su tavola di quercia e rappresenta la scena in cui  Pilato mostra Gesù flagellato e incoronato di spine alla folla. Dalla folla armata e urlante in basso si levano grida che sono talvolta segnate da fumetti, e ciò avviene anche dal gruppo dei sacerdoti e soldati nella parte superiore, spesso ritratti con accenti grotteschi. La comparsa delle effigi caricaturali è la parte più originale dell'opera, che ne fa forse l'esempio più antico conosciuto, ben prima dei disegni di Leonardo da Vinci, che alcuni studiosi hanno accostato. Sulla sinistra si vedono, ormai quasi illeggibili, le figure dei donatori preganti in ginocchio.$</>
 <audio>$4$</>
 
-
 5($
+<titolo>$Colazione sull'erba$</>
+<autore>$Claude Monet$</>
+<anno>$1866$</>
+<testo>$Il quadro di Edouard Manet venne presentato al Salon del 1863: la giuria lo rifiutò. Il quadro fu dunque esposto presso il Salon dés Refusée, ma anche qui le accoglienze del pubblico e della critica furono negative. Il quadro scandalizzava sia per il soggetto, sia per lo stile. In esso vi sono raffigurati, in primo piano, una donna completamente nuda che conversa con due uomini completamente vestiti. In secondo piano vi è una seconda donna che si sta bagnando in uno stagno. Non è il nudo della donna a scandalizzare, ma la sua rappresentazione troppo realistica in una situazione apparentemente quotidiana ma decisamente insolita. Ciò che in sostanza urta è che la nudità della donna rende volgare una conversazione tra normali borghesi. Il soggetto del quadro è una rilettura del «Concerto campestre» di Tiziano. Nel quadro del pittore veneziano le figure hanno un preciso significato allegorico. La donna nuda di spalle, con il flauto in mano, sta insegnando la musica ai due pastorelli innanzi a lei. L’altra sta versando dell’acqua in una vaschetta, per simboleggiare un rito di purificazione. Le due donne sono nude perché rappresentano due ninfe. Sono la natura, mentre i due uomini appartengono alla civiltà e perciò sono vestiti. Il significato allegorico dell’immagine sta in ciò: l’uomo civile riceve dalla natura il dono della musica, che rimane la più trascendentale tra le arti, solo dopo essersi purificato. Questo tipo di allegoria, carica di significati alchemici (l’acqua che purifica), andava molto di moda nel Cinquecento. Il soggetto aveva un significato nascosto ma ben individuabile da chi aveva la cultura per leggere una simile immagine.$</>
+<audio>$5$</>
+
+6($
+<titolo>$I mangiatori di patate$</>
+<autore>$Vincent van Gogh$</>
+<anno>$1885$</>
+<testo>$Questo dipinto mostra, all'interno di una povera stanza, alcuni contadini che consumano il pasto serale servendosi da un unico piatto di patate, mentre una di loro sta versando il caffè. Van Gogh è molto legato a questo soggetto in quanto si sente come "uno di loro", anche i contadini come lui soffrono ed egli trova ingiusto il fatto che nonostante tutti i loro sforzi ed i loro sacrifici debbano vivere in modo così misero; viene sottolineata la continua fatica fisica di chi ha consumato, giorno dopo giorno, la propria vita nel lavoro dei campi: per questo motivo l'artista è come se volesse esaltare il cibo dei poveri. Alla resa oggettiva della realtà si sostituisce un'interpretazione di essa. La luce, provenendo dall'alto e colpendo perciò soltanto alcune parti, provoca contrasti chiaroscurali e accentua la caratterizzazione dei volti, delle mani, degli abiti. Singolare è la rappresentazione del volto e delle mani dipinti in modo caricaturale: con questo il pittore vuole esagerare e intensificare la realtà (la caricatura e la deformazione sono, infatti, un'esagerazione della realtà stessa, al fine di renderla più intensa). Il colore, che richiama le tecniche fiamminghe, è monocromatico; ciò fa sì che l'occhio non sia appagato ma percepisca la realtà attraverso l'interiorità di Van Gogh.$</>
+<audio>$6$</>
+
+7($
+<titolo>$Vergine delle rocce$</>
+<autore>$Leonardo da Vinci$</>
+<anno>$1483$</>
+<testo>$Il soggetto dell’opera è il leggendario incontro tra i piccoli Gesù e Giovanni narrato nella Vita di Giovanni secondo Serapione[3] e in altri testi sull'infanzia di Cristo. La scena si svolge in un umido paesaggio roccioso, in cui dominano fiori e piante acquatiche e descritti con minuzia da botanico; da lontano si intravede un corso d’acqua. Al centro Maria allunga la mano destra a proteggere il piccolo san Giovanni in preghiera, inginocchiato e rivolto a Gesù Bambino, nell’atto di benedirlo e con il corpo in torsione. Dietro di lui si trova un angelo, con un vaporoso mantello rosso, che guarda direttamente verso lo spettatore con un lieve sorriso, con la mano destra indica il Battista. La mano sinistra di Maria è invece protesa a proteggere il figlio. Elementi non meno importanti sono le due cavità sullo sfondo, che rivelano vedute di speroni rocciosi e gruppi di rocce irte, che sfumano in lontananza tramite la tecnica della prospettiva aerea di cui Leonardo è considerato l’iniziatore.$</>
+<audio>$7$</>
+
+8($
 <titolo>$Nike di Samotracia$</>
 <autore>$Pitocrito$</>
 <anno>$200-180 a.C.$</>
 <testo>$La statua rappresenta la giovane dea alata, figlia di Pallante, che porta l'annuncio delle vittorie militari, mentre si posa sulla prua di una nave da battaglia (il basamento, pure in pietra). Strettamente legata ad Atena, le venne tributato culto individuale solo a partire dall'epoca ellenistica, cui appartiene l'opera, forse a seguito delle imprese di Alessandro Magno. Un vento impetuoso investe la figura protesa in avanti, muovendo il panneggio che aderisce strettamente al corpo e crea un gioco chiaroscurale di pieghette dall'altissimo valore virtuosistico, in grado di valorizzare il risalto dello slancio.Scolpita nel pregiato marmo di Paro, la dea posa con leggerezza il piede destro sulla nave, mentre per il fitto battere delle ali, che frenano l'impeto del volo, il petto si protende in avanti e la gamba sinistra rimane indietro. Le braccia sono perdute, il braccio destro era probabilmente abbassato, a reggere il pennone appoggiato alla stessa spalla, mentre il braccio sinistro era sollevato, con la mano aperta a compiere un gesto di saluto, oppure a reggere una corona.$</>
-<audio>$5$</>
+<audio>$8$</>
+
+9($
+<titolo>$Augusto di Prima Porta$</>
+<autore>$Sconosciuto$</>
+<anno>$20 a.C.$</>
+<testo>$La statua ritrae l'imperatore Augusto, in piedi, con il braccio destro alzato e il gesto di attirare l'attenzione: si tratta della posa con cui si richiedeva il silenzio prima dell'adlocutio (incitamento all'esercito prima della battaglia). La figura indossa la corazza che è decorata riccamente, al di sotto della quale porta la tunica corta militare. Un paludamentum (mantello che insieme al Parazonium era il simbolo del generale romano quando comandava un esercito) gli avvolge i fianchi, ricadendo mollemente sulla mano sinistra, con un panneggio particolarmente elaborato. Nella stessa mano impugna la lancia. Sulla gamba destra è riportato un bambino: Eros, a cavallo di un delfino. Eros era figlio di Venere e il delfino è un omaggio a Venere, simboleggia infatti la nascita della dea avvenuta dall'acqua. Infatti Augusto apparteneva alla gens Iulia, che si riteneva discendere da Venere, madre di Enea, tramite il figlio di questi Ascanio o Iulo.
+L'imperatore è ritratto, almeno nel volto, nelle sue reali fattezze, anche se idealizzate nella celebrazione della sua carica.$</>
+<audio>$9$</>

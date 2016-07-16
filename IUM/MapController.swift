@@ -9,8 +9,7 @@
 import UIKit
 
 class MapController: UIViewController {
-    
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
         
@@ -22,9 +21,14 @@ class MapController: UIViewController {
 
 
         // 4
+        
         view.addSubview(MapView())
         
+       
+        
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

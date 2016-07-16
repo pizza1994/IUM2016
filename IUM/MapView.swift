@@ -8,21 +8,24 @@
 
 import UIKit
 import AVFoundation
+import CoreLocation
 
-class MapView : UIScrollView{
+class MapView : UIScrollView, CLLocationManagerDelegate{
    
     var imageView : UIImageView!
     var popupPreview : Preview?
     var text: [String]?
-    
+    static var staticMap : MapView?
+    let locationManager = CLLocationManager()
+    let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "ACFD065E-C3C0-11E3-9BBE-1A514932AC03")!, identifier: "Estimotes")
+    let buttonArray = NSMutableArray()
 
     init(){
         super.init(frame: CGRect(x: 0, y: 82, width: UIScreen.mainScreen().bounds.width, height: UIScreen.mainScreen().bounds.height))
         
         let opera_width = CGFloat(20);
-        let opera_height = CGFloat(20*1.67);
-        let buttonArray = NSMutableArray()
-        let coordinates = [CGRectMake(160, 80, opera_width, opera_height), CGRectMake(160, 130, opera_width, opera_height), CGRectMake(160, 250, opera_width, opera_height), CGRectMake(325, 400, opera_width, opera_height), CGRectMake(500, 200, opera_width, opera_height)]
+        let opera_height = CGFloat(25);
+        let coordinates = [CGRectMake(160, 80, opera_width, opera_height), CGRectMake(165, 500, opera_width, opera_height), CGRectMake(330, 500, opera_width, opera_height), CGRectMake(330, 400, opera_width, opera_height), CGRectMake(1000, 55, opera_width, opera_height), CGRectMake(930, 500, opera_width, opera_height), CGRectMake(370, 1030, opera_width, opera_height), CGRectMake(800, 1000, opera_width, opera_height), CGRectMake(650, 1150, opera_width, opera_height)]
         let location =  NSBundle.mainBundle().pathForResource("Opere", ofType: "txt")
         let fileContent : String = try! String(contentsOfFile: location!, encoding: NSUTF8StringEncoding)
         let separators = NSCharacterSet(charactersInString: "$\n")
@@ -59,11 +62,33 @@ class MapView : UIScrollView{
         myPosition.frame = CGRectMake(250, 90, 25, 25)
         self.addSubview(myPosition)
         
+        MapView.staticMap = self
+        
+        locationManager.delegate = self
+        if (CLLocationManager.authorizationStatus() != CLAuthorizationStatus.AuthorizedWhenInUse) {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        locationManager.startRangingBeaconsInRegion(region)
 
     }
     
+    func locationManager(manager: CLLocationManager, didRangeBeacons beacons: [CLBeacon], inRegion region: CLBeaconRegion) {
+        let knownBeacons = beacons.filter{ $0.proximity != CLProximity.Unknown }
+        if (knownBeacons.count > 0 && popupPreview == nil) {
+            let closestBeacon = knownBeacons[0] as CLBeacon
+            let butt : UIButton = buttonArray[closestBeacon.minor.integerValue-1] as! UIButton
+            print(closestBeacon.minor.integerValue)
+            
+            buttonPressed(butt)
+        }
+    }
+
+    
     func buttonPressed(sender: UIButton!){
         
+        if(popupPreview != nil){
+            self.popupPreview!.removeFromSuperview()
+        }
         for view in self.subviews{
             if (view.isKindOfClass(Popup)){
                 view.removeFromSuperview()
@@ -139,6 +164,22 @@ class MapView : UIScrollView{
         
     }
     
+    func searchedOpera(){
+        for view in self.subviews as [UIView] {
+            if let btn = view as? UIButton {
+                if btn.tag == IndicationsController.operaCercata!{
+                    let image = UIImage(named: "punto-opera_blu.png") as UIImage?
+                    btn.setImage(image, forState: .Normal)
+
+                }
+                else{
+                    let image = UIImage(named: "punto-opera.png") as UIImage?
+                    btn.setImage(image, forState: .Normal)
+                }
+            }
+        }
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -150,6 +191,7 @@ class MapView : UIScrollView{
 
             if(popupPreview != nil){
                 self.popupPreview!.removeFromSuperview()
+                popupPreview = nil
             }
             for view in self.subviews{
                 if (view.isKindOfClass(Popup)){

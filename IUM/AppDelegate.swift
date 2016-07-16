@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+       
         application.statusBarHidden = true
+        
+        var text: [String]?
+        var operaTitle : String = ""
+        var operaAuthor : String = ""
+        var operaYear : String = ""
+        var textDescription : String = ""
+        var audioDescription : String = ""
+        var flag : Bool = false
+        var audio: AVAudioPlayer?
+        var i : Int = 0
+        
+        let location =  NSBundle.mainBundle().pathForResource("Opere", ofType: "txt")
+        let fileContent : String = try! String(contentsOfFile: location!, encoding: NSUTF8StringEncoding)
+        let separators = NSCharacterSet(charactersInString: "$\n")
+        
+        text = fileContent.componentsSeparatedByCharactersInSet(separators);
+
+        
+        for word in text!{
+            
+            if word == "<titolo>"{
+                operaTitle = text![i+1]
+            }
+            else if word == "<autore>"{
+                operaAuthor = text![i+1]
+            }
+            else if word == "<anno>"{
+                operaYear = text![i+1]
+            }
+            else if word == "<testo>"{
+                textDescription = text![i+1]
+            }
+            else if word == "<audio>"{
+                audioDescription = text![i+1]
+                let sound: NSURL? =   NSURL(fileURLWithPath: (NSBundle.mainBundle().pathForResource("1", ofType: "mp3"))!)
+                audio = try? AVAudioPlayer(contentsOfURL:sound!)
+            }
+            
+            
+            if audioDescription != ""{
+                Opera.opere.append(Opera(title: operaTitle, author: operaAuthor, year: operaYear, textDescription: textDescription, audioDescriprion: audio))
+                audioDescription = ""
+            }
+            i += 1
+        }
+
 
         return true
     }

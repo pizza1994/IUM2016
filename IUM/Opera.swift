@@ -16,6 +16,7 @@ class Opera : NSObject{
     private var year: String?
     private var textDescription: String!
     private var audioDescription: AVAudioPlayer?
+    static var opere = [Opera]()
     
     
     
@@ -26,12 +27,12 @@ class Opera : NSObject{
         self.year = year
         self.textDescription = textDescription
         self.audioDescription = audioDescriprion
-        
         super.init()
+        
     }
     
     func getTitle() -> String! {
-    
+        
         return self.title
     
     }

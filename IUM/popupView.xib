@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Belleza-Regular.ttf">
+            <string>Belleza-Regular</string>
+            <string>Belleza-Regular</string>
+            <string>Belleza-Regular</string>
+            <string>Belleza-Regular</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Popup" customModule="IUM" customModuleProvider="target">
             <connections>
@@ -39,7 +47,7 @@
                     <constraints>
                         <constraint firstAttribute="width" constant="151" id="IhH-7u-ODw"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                    <fontDescription key="fontDescription" name="Belleza-Regular" family="Belleza" pointSize="17"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -48,7 +56,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="NQC-Sn-MzB"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="19"/>
+                    <fontDescription key="fontDescription" name="Belleza-Regular" family="Belleza" pointSize="22"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -56,7 +64,7 @@
                     <rect key="frame" x="30" y="560" width="240" height="334"/>
                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <fontDescription key="fontDescription" name="Belleza-Regular" family="Belleza" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iJg-pb-bmq">
@@ -81,31 +89,30 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2U-Cj-5vA">
-                    <rect key="frame" x="159" y="102" width="133" height="21"/>
-                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                    <rect key="frame" x="159" y="103" width="133" height="20"/>
+                    <fontDescription key="fontDescription" name="Belleza-Regular" family="Belleza" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnu-Qy-laf">
                     <rect key="frame" x="120" y="208" width="60" height="50"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="60" id="88G-El-amy"/>
-                        <constraint firstAttribute="height" constant="50" id="rBx-bB-6Zx"/>
+                        <constraint firstAttribute="height" constant="50" id="HsL-tv-9CK"/>
+                        <constraint firstAttribute="width" constant="60" id="eZQ-fa-jsb"/>
                     </constraints>
                     <state key="normal" image="play-pausa.png"/>
                     <connections>
                         <action selector="play_pause:" destination="-1" eventType="touchUpInside" id="CXU-lb-LDn"/>
                     </connections>
                 </button>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U24-Oa-M4X">
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U24-Oa-M4X">
                     <rect key="frame" x="50" y="292" width="200" height="2"/>
                     <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </progressView>
             </subviews>
             <constraints>
+                <constraint firstItem="U24-Oa-M4X" firstAttribute="leading" secondItem="61L-B1-k6w" secondAttribute="leading" constant="50" id="0mk-pG-AkU"/>
                 <constraint firstItem="EN1-ys-rO5" firstAttribute="leading" secondItem="61L-B1-k6w" secondAttribute="leading" constant="30" id="2eO-Ns-WPr"/>
-                <constraint firstItem="Wnu-Qy-laf" firstAttribute="top" secondItem="f2U-Cj-5vA" secondAttribute="bottom" constant="85" id="3TC-9C-vS8"/>
-                <constraint firstItem="iJg-pb-bmq" firstAttribute="centerX" secondItem="Wnu-Qy-laf" secondAttribute="centerX" id="5b3-tc-f73"/>
                 <constraint firstItem="MtF-f7-GX6" firstAttribute="top" secondItem="Sgd-xe-AyV" secondAttribute="bottom" constant="22" id="6E3-RH-VO0"/>
                 <constraint firstItem="MtF-f7-GX6" firstAttribute="trailing" secondItem="iJg-pb-bmq" secondAttribute="trailing" id="75D-eV-HmL"/>
                 <constraint firstAttribute="trailing" secondItem="c7H-ih-45h" secondAttribute="trailing" constant="141" id="8AB-Ph-Vu1"/>
@@ -117,18 +124,23 @@
                 <constraint firstItem="VKj-Se-ZAR" firstAttribute="trailing" secondItem="ndn-J6-c3H" secondAttribute="trailing" id="Mak-g4-zRh"/>
                 <constraint firstItem="VKj-Se-ZAR" firstAttribute="leading" secondItem="ndn-J6-c3H" secondAttribute="leading" id="PWe-XK-aWG"/>
                 <constraint firstItem="Sgd-xe-AyV" firstAttribute="leading" secondItem="VKj-Se-ZAR" secondAttribute="leading" id="RSc-cx-zyL"/>
+                <constraint firstItem="Wnu-Qy-laf" firstAttribute="top" secondItem="61L-B1-k6w" secondAttribute="top" constant="208" id="Sui-2Y-lFt"/>
                 <constraint firstItem="EN1-ys-rO5" firstAttribute="top" secondItem="MtF-f7-GX6" secondAttribute="bottom" constant="36" id="Tr5-tD-cUV"/>
                 <constraint firstItem="Sgd-xe-AyV" firstAttribute="trailing" secondItem="VKj-Se-ZAR" secondAttribute="trailing" id="byr-iI-JSj"/>
                 <constraint firstItem="f2U-Cj-5vA" firstAttribute="trailing" secondItem="61L-B1-k6w" secondAttribute="trailingMargin" id="ec3-UF-UwX"/>
                 <constraint firstItem="VKj-Se-ZAR" firstAttribute="centerX" secondItem="EN1-ys-rO5" secondAttribute="centerX" id="hHb-jq-59C"/>
                 <constraint firstItem="c7H-ih-45h" firstAttribute="top" secondItem="61L-B1-k6w" secondAttribute="top" constant="102" id="hbQ-qI-OSs"/>
+                <constraint firstItem="Wnu-Qy-laf" firstAttribute="centerX" secondItem="VKj-Se-ZAR" secondAttribute="centerX" id="hkG-KJ-lEE"/>
+                <constraint firstItem="Wnu-Qy-laf" firstAttribute="top" secondItem="f2U-Cj-5vA" secondAttribute="bottom" constant="85" id="i38-nl-UXE"/>
                 <constraint firstItem="c7H-ih-45h" firstAttribute="top" secondItem="VKj-Se-ZAR" secondAttribute="bottom" constant="36" id="i50-ot-z4t"/>
                 <constraint firstAttribute="trailing" secondItem="VKj-Se-ZAR" secondAttribute="trailing" id="iEo-oD-4Hz"/>
                 <constraint firstItem="MtF-f7-GX6" firstAttribute="centerX" secondItem="EN1-ys-rO5" secondAttribute="centerX" id="jgN-lf-jud"/>
                 <constraint firstAttribute="bottom" secondItem="EN1-ys-rO5" secondAttribute="bottom" constant="70" id="lGE-8J-E9n"/>
                 <constraint firstItem="ndn-J6-c3H" firstAttribute="top" secondItem="iJg-pb-bmq" secondAttribute="bottom" constant="26" id="m2x-tf-7WZ"/>
+                <constraint firstItem="Wnu-Qy-laf" firstAttribute="centerX" secondItem="U24-Oa-M4X" secondAttribute="centerX" id="p6E-XL-rPz"/>
                 <constraint firstItem="f2U-Cj-5vA" firstAttribute="baseline" secondItem="c7H-ih-45h" secondAttribute="baseline" id="pXu-dx-zQt"/>
                 <constraint firstAttribute="bottom" secondItem="c7H-ih-45h" secondAttribute="bottom" constant="841" id="r7a-Kl-1j7"/>
+                <constraint firstItem="U24-Oa-M4X" firstAttribute="top" secondItem="Wnu-Qy-laf" secondAttribute="bottom" constant="34" id="vpH-5X-fSi"/>
                 <constraint firstItem="f2U-Cj-5vA" firstAttribute="leading" secondItem="c7H-ih-45h" secondAttribute="trailing" id="zQO-6z-BbE"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
