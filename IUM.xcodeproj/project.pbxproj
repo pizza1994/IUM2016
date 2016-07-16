@@ -30,11 +30,8 @@
 		25B104A11CC78463005C6B2C /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B104A01CC78463005C6B2C /* ContainerViewController.swift */; };
 		25B104A51CC78865005C6B2C /* HelpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104A41CC78865005C6B2C /* HelpController.xib */; };
 		25B104A71CC78870005C6B2C /* IndicationsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104A61CC78870005C6B2C /* IndicationsController.xib */; };
-		25B104D21CD9FA69005C6B2C /* indicazioni_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104CC1CD9FA69005C6B2C /* indicazioni_selected.png */; };
 		25B104D31CD9FA69005C6B2C /* indicazioni.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104CD1CD9FA69005C6B2C /* indicazioni.png */; };
-		25B104D41CD9FA69005C6B2C /* informazioni_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104CE1CD9FA69005C6B2C /* informazioni_selected.png */; };
 		25B104D51CD9FA69005C6B2C /* informazioni.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104CF1CD9FA69005C6B2C /* informazioni.png */; };
-		25B104D61CD9FA69005C6B2C /* mappa_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104D01CD9FA69005C6B2C /* mappa_selected.png */; };
 		25B104D71CD9FA69005C6B2C /* mappa.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104D11CD9FA69005C6B2C /* mappa.png */; };
 		25B104D91CD9FA93005C6B2C /* MapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104D81CD9FA93005C6B2C /* MapController.xib */; };
 		25B104DB1CDA0A2C005C6B2C /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B104DA1CDA0A2C005C6B2C /* map.png */; };
@@ -46,6 +43,9 @@
 		25B104E91CDF864A005C6B2C /* previewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B104E81CDF864A005C6B2C /* previewView.xib */; };
 		25EA06861CE1BFDF00C8389B /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EA06851CE1BFDF00C8389B /* Popup.swift */; };
 		25EA06881CE1C07D00C8389B /* popupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25EA06871CE1C07D00C8389B /* popupView.xib */; };
+		D22975A41D3A7394005AFED8 /* indicazioni_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D22975A11D3A7394005AFED8 /* indicazioni_selected.png */; };
+		D22975A51D3A7394005AFED8 /* informazioni_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D22975A21D3A7394005AFED8 /* informazioni_selected.png */; };
+		D22975A61D3A7394005AFED8 /* mappa_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = D22975A31D3A7394005AFED8 /* mappa_selected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,11 +96,8 @@
 		25B104A01CC78463005C6B2C /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		25B104A41CC78865005C6B2C /* HelpController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpController.xib; sourceTree = "<group>"; };
 		25B104A61CC78870005C6B2C /* IndicationsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IndicationsController.xib; sourceTree = "<group>"; };
-		25B104CC1CD9FA69005C6B2C /* indicazioni_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = indicazioni_selected.png; sourceTree = "<group>"; };
 		25B104CD1CD9FA69005C6B2C /* indicazioni.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = indicazioni.png; sourceTree = "<group>"; };
-		25B104CE1CD9FA69005C6B2C /* informazioni_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = informazioni_selected.png; sourceTree = "<group>"; };
 		25B104CF1CD9FA69005C6B2C /* informazioni.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = informazioni.png; sourceTree = "<group>"; };
-		25B104D01CD9FA69005C6B2C /* mappa_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappa_selected.png; sourceTree = "<group>"; };
 		25B104D11CD9FA69005C6B2C /* mappa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mappa.png; sourceTree = "<group>"; };
 		25B104D81CD9FA93005C6B2C /* MapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapController.xib; sourceTree = "<group>"; };
 		25B104DA1CDA0A2C005C6B2C /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
@@ -112,6 +109,9 @@
 		25B104E81CDF864A005C6B2C /* previewView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = previewView.xib; sourceTree = "<group>"; };
 		25EA06851CE1BFDF00C8389B /* Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		25EA06871CE1C07D00C8389B /* popupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = popupView.xib; sourceTree = "<group>"; };
+		D22975A11D3A7394005AFED8 /* indicazioni_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = indicazioni_selected.png; path = ../../../Desktop/indicazioni_selected.png; sourceTree = "<group>"; };
+		D22975A21D3A7394005AFED8 /* informazioni_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = informazioni_selected.png; path = ../../../Desktop/informazioni_selected.png; sourceTree = "<group>"; };
+		D22975A31D3A7394005AFED8 /* mappa_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mappa_selected.png; path = ../../../Desktop/mappa_selected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,13 +219,13 @@
 				252A400F1D2D1248007C206A /* scorri-su.png */,
 				252A40091D2D122C007C206A /* posizione_utente.png */,
 				25B104E01CDC9AE5005C6B2C /* popup_small.png */,
+				D22975A11D3A7394005AFED8 /* indicazioni_selected.png */,
+				D22975A21D3A7394005AFED8 /* informazioni_selected.png */,
+				D22975A31D3A7394005AFED8 /* mappa_selected.png */,
 				25B104DE1CDC9A2D005C6B2C /* popup.png */,
-				25B104CC1CD9FA69005C6B2C /* indicazioni_selected.png */,
 				25912F921D250CDD00378D77 /* punto_interesse.png */,
 				25B104CD1CD9FA69005C6B2C /* indicazioni.png */,
-				25B104CE1CD9FA69005C6B2C /* informazioni_selected.png */,
 				25B104CF1CD9FA69005C6B2C /* informazioni.png */,
-				25B104D01CD9FA69005C6B2C /* mappa_selected.png */,
 				25B104D11CD9FA69005C6B2C /* mappa.png */,
 			);
 			name = Immagini;
@@ -338,17 +338,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22975A61D3A7394005AFED8 /* mappa_selected.png in Resources */,
 				252A40111D2D1248007C206A /* scorri-giu.png in Resources */,
 				25B104D71CD9FA69005C6B2C /* mappa.png in Resources */,
 				252A400A1D2D122C007C206A /* posizione_utente.png in Resources */,
-				25B104D61CD9FA69005C6B2C /* mappa_selected.png in Resources */,
 				252A40181D2FFA6C007C206A /* punto-opera.png in Resources */,
 				25B104E11CDC9AE5005C6B2C /* popup_small.png in Resources */,
 				25AADBE31D3A2F4B001E4225 /* Opere.txt in Resources */,
+				D22975A51D3A7394005AFED8 /* informazioni_selected.png in Resources */,
 				252A40141D2D1A3D007C206A /* 2.mp3 in Resources */,
 				25EA06881CE1C07D00C8389B /* popupView.xib in Resources */,
 				25B104DB1CDA0A2C005C6B2C /* map.png in Resources */,
 				25B104A51CC78865005C6B2C /* HelpController.xib in Resources */,
+				D22975A41D3A7394005AFED8 /* indicazioni_selected.png in Resources */,
 				25B104771CC7793D005C6B2C /* LaunchScreen.storyboard in Resources */,
 				25B104D91CD9FA93005C6B2C /* MapController.xib in Resources */,
 				25B104741CC7793D005C6B2C /* Assets.xcassets in Resources */,
@@ -361,10 +363,8 @@
 				252A40051D26B174007C206A /* 1.mp3 in Resources */,
 				25912F931D250CDD00378D77 /* punto_interesse.png in Resources */,
 				25B104DF1CDC9A2D005C6B2C /* popup.png in Resources */,
-				25B104D41CD9FA69005C6B2C /* informazioni_selected.png in Resources */,
 				25B104E91CDF864A005C6B2C /* previewView.xib in Resources */,
 				252A40171D2FFA6C007C206A /* punto-opera_blu.png in Resources */,
-				25B104D21CD9FA69005C6B2C /* indicazioni_selected.png in Resources */,
 				25B104A71CC78870005C6B2C /* IndicationsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

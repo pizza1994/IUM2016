@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -33,19 +33,19 @@
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0RP-hq-C1h">
                     <rect key="frame" x="0.0" y="125" width="375" height="542"/>
                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <color key="sectionIndexBackgroundColor" red="1" green="0.87450980389999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="1" green="0.98863475526017131" blue="0.99507721033050545" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="uU0-8w-E21"/>
                         <outlet property="delegate" destination="-1" id="Myl-mB-wki"/>
                     </connections>
                 </tableView>
             </subviews>
-            <color key="backgroundColor" red="0.96078431369999995" green="0.87450980389999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.035294117649999998" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
     <resources>
-        <image name="indicazioni_selected.png" width="426" height="114"/>
+        <image name="indicazioni_selected.png" width="500" height="114"/>
         <image name="mappa.png" width="277" height="114"/>
     </resources>
 </document>
