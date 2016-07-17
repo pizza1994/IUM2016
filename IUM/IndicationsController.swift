@@ -11,16 +11,29 @@ import UIKit
 class IndicationsController : UIViewController, UITableViewDelegate,  UITableViewDataSource{
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var mapImage: UIImageView?
     var items = [String]()
     var flag = true
     static var operaCercata : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        items = ["Area Preistorica", "Area Greca", "Area Romana", "Area Bosch", "Area Michelangelo", "Area Leonardo Da Vinci", "Area Monet", "Area Medievale", "Area van Gogh"]
+        items = [/*"Area Preistorica",*/ "Area Greca", "Area Romana", "Area Bosch", "Area Michelangelo", "Area Leonardo Da Vinci", "Area Monet", /*"Area Medievale",*/ "Area van Gogh"]
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         
         // Do any additional setup after loading the view, typically from a nib.
+        let goToMap = UITapGestureRecognizer(target:self, action:#selector(IndicationsController.goToMap(_:)))
+
+        mapImage!.userInteractionEnabled = true
+        mapImage!.addGestureRecognizer(goToMap)
+        
+    }
+    
+    func goToMap(img: AnyObject)
+    {
+        
+        let scrollView = self.view.superview as! UIScrollView!
+        scrollView.contentOffset = CGPointMake(scrollView.frame.size.width, 0);
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +50,8 @@ class IndicationsController : UIViewController, UITableViewDelegate,  UITableVie
         
         cell.textLabel?.text = self.items[indexPath.row]
         cell.backgroundColor = UIColor.clearColor()
+        cell.textLabel?.font = UIFont(name:"Bellezza", size:22)
+        cell.textLabel?.textColor = UIColor.blackColor()
         
         return cell
     }
@@ -128,28 +143,34 @@ class IndicationsController : UIViewController, UITableViewDelegate,  UITableVie
             
             switch currentCell.textLabel!.text! {
             case "\tVergine delle rocce":
-                
-                for opera in Opera.opere{
-                    if opera.getTitle() == "Vergine delle rocce"{
-                        IndicationsController.operaCercata = Opera.opere.indexOf(opera)!+1
-                        let scrollView = self.view.superview as! UIScrollView!
-                        scrollView.contentOffset = CGPointMake(scrollView.frame.size.width, 0);
-                        MapView.staticMap!.searchedOpera()
-                    }
-                    
-                }
+                selectedOpera("Vergine delle rocce")
+                break
+            case "\tCristo alla colonna":
+                selectedOpera("Cristo alla colonna")
+                break
+            case "\tMorte di un avaro":
+                selectedOpera("Morte di un avaro")
+                break
+            case "\tEcce Homo":
+                selectedOpera("Ecce Homo")
+                break
+            case "\tColazione sull'erba":
+                selectedOpera("Colazione sull'erba")
+                break
+            case "\tI mangiatori di patate":
+                selectedOpera("I mangiatori di patate")
+                break
+            case "\tNike di Samotracia":
+                selectedOpera("Nike di Samotracia")
+                break
+            case "\tAugusto di Prima Porta":
+                selectedOpera("Augusto di Prima Porta")
                 break
             case "\tDavid":
                 
-                for opera in Opera.opere{
-                    if opera.getTitle() == "David"{
-                        IndicationsController.operaCercata = Opera.opere.indexOf(opera)!+1
-                        let scrollView = self.view.superview as! UIScrollView!
-                        scrollView.contentOffset = CGPointMake(scrollView.frame.size.width, 0);
-                        MapView.staticMap!.searchedOpera()
-                    }
-                    
-                }
+                selectedOpera("David")
+
+               
                 break
 
                 
@@ -157,10 +178,22 @@ class IndicationsController : UIViewController, UITableViewDelegate,  UITableVie
                 break
             }
             
-            items = ["Area Preistorica", "Area Greca", "Area Romana", "Area Bosch", "Area Michelangelo", "Area Leonardo Da Vinci", "Area Monet", "Area Medievale", "Area van Gogh"]
+            items = [/*"Area Preistorica",*/ "Area Greca", "Area Romana", "Area Bosch", "Area Michelangelo", "Area Leonardo Da Vinci", "Area Monet", /*"Area Medievale",*/ "Area van Gogh"]
             flag = true
         }
         tableView.reloadData()
+    }
+    
+    func selectedOpera(operaName : String){
+        for opera in Opera.opere{
+            if opera.getTitle() == operaName{
+                IndicationsController.operaCercata = Opera.opere.indexOf(opera)!+1
+                let scrollView = self.view.superview as! UIScrollView!
+                scrollView.contentOffset = CGPointMake(scrollView.frame.size.width, 0);
+                MapView.staticMap!.searchedOpera()
+            }
+            
+        }
     }
 
     

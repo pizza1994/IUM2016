@@ -17,7 +17,7 @@ class MapView : UIScrollView, CLLocationManagerDelegate{
     var text: [String]?
     static var staticMap : MapView?
     let locationManager = CLLocationManager()
-    let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "ACFD065E-C3C0-11E3-9BBE-1A514932AC03")!, identifier: "Estimotes")
+    let region = CLBeaconRegion(proximityUUID: NSUUID(UUIDString: "ACFD065E-C3C0-11E3-9BBE-1A514932AC02")!, identifier: "Estimotes")
     let buttonArray = NSMutableArray()
 
     init(){
@@ -134,7 +134,7 @@ class MapView : UIScrollView, CLLocationManagerDelegate{
             i += 1
         }
     
-        let sound: NSURL? =   NSURL(fileURLWithPath: (NSBundle.mainBundle().pathForResource("1", ofType: "mp3"))!)
+        let sound: NSURL? =   NSURL(fileURLWithPath: (NSBundle.mainBundle().pathForResource(audioDescription, ofType: "mp3"))!)
         let audio = try? AVAudioPlayer(contentsOfURL:sound!)
         
         popupPreview = Preview(opera: Opera(title: operaTitle, author: operaAuthor, year: operaYear, textDescription: textDescription, audioDescriprion: audio), x_: position.x, y_: position.y, width_: 300, height_:100)
@@ -144,10 +144,10 @@ class MapView : UIScrollView, CLLocationManagerDelegate{
         
         
         if (position.x+150 > UIScreen.mainScreen().bounds.size.width){
-            self.setContentOffset(CGPointMake(position.x-187, 0), animated: true)
+            self.setContentOffset(CGPointMake(position.x-187, position.y-300), animated: true)
         }
         else if(position.x < UIScreen.mainScreen().bounds.size.width){
-            self.setContentOffset(CGPointMake(position.x-187, 0), animated: true)
+            self.setContentOffset(CGPointMake(position.x-187, position.y-300), animated: true)
             
         }
         
@@ -170,6 +170,7 @@ class MapView : UIScrollView, CLLocationManagerDelegate{
                 if btn.tag == IndicationsController.operaCercata!{
                     let image = UIImage(named: "punto-opera_blu.png") as UIImage?
                     btn.setImage(image, forState: .Normal)
+                    self.setContentOffset(CGPointMake(btn.frame.origin.x-100, btn.frame.origin.y-100), animated: true)
 
                 }
                 else{
